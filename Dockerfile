@@ -6,7 +6,6 @@ ADD . /app
 
 # install the kernel gateway
 RUN pip install jupyter_kernel_gateway
-RUN pip install tensorflow
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 8888
