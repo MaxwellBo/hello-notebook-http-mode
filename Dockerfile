@@ -4,7 +4,6 @@ WORKDIR /app
 
 ADD . /app
 
-# install the kernel gateway
 RUN pip install jupyter_kernel_gateway
 
 # run kernel gateway on container start, not notebook server
