@@ -1,10 +1,10 @@
 FROM jupyter/datascience-notebook
 
+RUN pip install jupyter_kernel_gateway
+
 WORKDIR /app
 
 ADD . /app
-
-RUN pip install jupyter_kernel_gateway
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 8888
